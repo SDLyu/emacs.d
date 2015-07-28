@@ -81,6 +81,7 @@
 (require 'init-nxml)
 (require 'init-html)
 (require 'init-css)
+(require 'init-web)
 (require 'init-haml)
 (require 'init-python-mode)
 (require 'init-haskell)
