@@ -18,4 +18,13 @@
   (set-selection-coding-system (if (eq system-type 'windows-nt) 'utf-16-le 'utf-8))
   (prefer-coding-system 'utf-8))
 
+;; Set html color fit to monokai theme
+(defun web-mode-hook ()
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#FFFFFF")
+  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#FFFFFF")
+  (set-face-attribute 'web-mode-html-attr-value-face nil :foreground "#FFF68F")
+  (set-face-attribute 'web-mode-html-attr-name-face nil :foreground "#FF8C00"))
+
+(add-hook 'web-mode-hook 'web-mode-hook )
+
 (provide 'init-locales)
